@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>checkedOutBooks</title>
+</head>
+<body>
+<div th:each="lib3 : ${books1}">
+    <a
+            th:text="${lib3.getName() + ', ' + lib3.getDateAdded()+ ', ' + lib3.getAvailable()}"></a>
+</div>
+</body>
+</html>
